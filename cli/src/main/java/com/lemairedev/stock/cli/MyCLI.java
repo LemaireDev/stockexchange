@@ -10,7 +10,7 @@ public class MyCLI {
             StockExchangeController controller = new StockExchangeController();
             StockDto stockDto = controller.getStock(args[0]);
             if (stockDto == null){
-                System.out.println("Not a valid stock");
+                System.out.println("Not a valid stock!");
             } else {
                 System.out.println(stockDto);
             }
